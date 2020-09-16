@@ -1,0 +1,65 @@
+<article>
+    <header><h1>Dodaj projekt</h1></header>
+    <section>
+        <section id="section-client">
+            <div>
+                Nazwa projektu
+                <input type="text">
+            </div>
+            <div>
+                Klient / Firma
+                <input type="text">
+            </div>
+            <div>
+                Addres klienta 
+                <input type="text">
+            </div>
+            <div>
+                NIP klienta
+                <input type="text">
+            </div>
+            
+            <div>
+                Deadline
+                <input type="datetime-local">
+            </div>
+            <div>
+                Wynagrodzenie
+                <input type="number" [formControl]="salary" pattern="^[0-9]*$">
+            </div>
+
+            <!-- <div *ngIf="sallary.errors?.pattern">Invalid age !</div> -->
+        </section>
+        
+
+        <section id='section-employees'>
+            
+            <div>
+                Praacownicy
+                <form>
+                    <select name="nazwa">
+                        <option type="checkbox" >Jan KowalskiJanKowalski</option>
+                        <option>Jan NowaklskiJanKowa</option>
+                        <option>Jan KowalskiJanKowalski</option>
+                        <option>Jan NowaklskiJanKowa</option>
+                        <option>Jan KowalskiJanKowalski</option>
+                        <option>Jan NowaklskiJanKowa</option>
+                        <option>Jan KowalskiJanKowalski</option>
+                        <option>Jan NowaklskiJanKowa</option>
+                    </select>
+                </form>
+            </div>
+            <div>
+                Liczba godzin pracy
+                <input type="number">
+            </div>
+        </section>
+
+        <section id="section-notes">
+            Notatki
+            <input type="text">
+        </section>
+    </section>
+    
+    <button>Dodaj</button> 
+</article>

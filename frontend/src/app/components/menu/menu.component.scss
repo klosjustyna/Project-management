@@ -1,0 +1,43 @@
+@import '../../../styles.scss';
+
+:host{
+    // width:100%;  
+}
+
+#icon-menu{
+    display: block;
+    margin: 10px;
+    padding: 20px;
+    @include responsive(sm){ display:none}  
+}
+nav{
+    display: flex;
+    align-items: flex-end;
+    flex-flow: column;
+    border-bottom: 2px solid $basicLightGrayColor;
+    
+    ul{
+        display: none;
+        margin: 0;
+    
+        @include responsive(sm){ 
+            display: flex;
+            list-style-type: none;
+            padding-inline-start: 0px;
+            justify-content: flex-end;
+        }  
+        li{
+            display: flex;
+            flex-flow: column;
+            justify-items: center;
+            
+
+            // margin: 10px;
+            padding: 15px;
+            cursor: pointer;
+            i{
+                margin: 10px auto;
+            }
+        }
+    }
+}

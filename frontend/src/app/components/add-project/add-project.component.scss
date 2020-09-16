@@ -1,0 +1,34 @@
+@import '../../../styles.scss';
+
+section{
+    // width: 900px;
+
+    // flex-wrap: wrap;
+    // justify-content: space-between;
+    div{
+        margin: 10px;
+        // padding: 10px;
+        width: 220px;
+        // display: flex;
+        // flex-direction: column;
+        font-weight: bold;
+        input{
+           
+        }
+    }
+}
+
+#section-{
+    &client{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0;
+    }
+    &employees{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0;
+    }
+    &notes{}
+
+}

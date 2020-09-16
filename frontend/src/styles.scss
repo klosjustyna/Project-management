@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+$break-xs: 576px;
+$break-sm: 768px;
+$break-md: 992px;
+$break-lg: 1200px;
+
+@mixin responsive($media) {
+  @if $media == xs {
+    @media only screen and (min-width: $break-xs) { @content; }
+  }
+  @if $media == sm {
+    @media only screen and (min-width: $break-sm) { @content; }
+  }
+  @else if $media == md {
+    @media only screen and (min-width: $break-md) { @content; }
+  }
+  @else if $media == lg {
+    @media only screen and (min-width: $break-lg) { @content; }
+  }
+}
+
+
+$basicBlueColor:#578FED;
+$basicLightGrayColor: #f2f2f2;
+$basicGrayColor: #d3d3d3;
+
+
+
+i{
+    color: $basicBlueColor;
+}
+
+body{
+  // background: $basicLightGrayColor;
+  margin: 0;
+  font-family: Helvetica, Tahoma, Geneva, sans-serif;
+}
+header{
+  h1{
+    text-align: center;
+    width: 230px;
+    padding: 5px;
+    border-bottom: 4px solid $basicBlueColor;
+  }
+}
+
+
+article{
+  margin: auto;
+  margin-top: 30px;
+  width: 90%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid $basicLightGrayColor;
+  border-top: 2px solid $basicBlueColor;
+  position: relative;
+}
+
+input, select, select option{
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid $basicGrayColor;
+  border-radius: 4px;
+}
+
+button{
+  background: $basicBlueColor;
+  border: none;
+  width: 170px;
+  height: 50px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
